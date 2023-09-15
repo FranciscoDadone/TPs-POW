@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="nav">
+        <div class="nav2">
+            <div class="txt">
+                <a href="">Gmail</a>
+                <a href="">Imágenes</a>
+            </div>
+            <div class="icon_app" >
+                <a  href="" >
+                    <span class="material-symbols-outlined">apps
+                        </span>
+                </a>
+                <a class="mail_btn" href="">J</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="logo"> 
+        <div class="imagen">   
+            <img src="imagenes/googleLogo.png" alt="">
+        </div>
+    </div>
+
+    <div class="busc">
+        <form action="">
+            <div class="busc2">
+                <div class="busc_bar">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            search
+                            </span>
+                    </div>
+                    <div>
+                        <textarea id="busqueda"></textarea>
+                    </div>
+                    <div>
+                        <img src="imagenes/busqueda.jpg" alt="">
+                    </div>
+                </div>   
+                <div class="busc_btn">
+                        <button>Buscar con Google</button>
+                        <button>Voy a tener suerte</button>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="lang" >
+        <div class="lang2">
+                Ofrecido por Google en:
+                <a href="">Español(Latinoamérica)</a>
+        </div>
+    </div>
+
+
+
+    <div class="foot">
+        <div class="foot2">
+            <div class="stat">
+                Argentina
+            </div>
+            <div class="link">  
+                <div class="txt">
+                    <a href="">Sobre Google</a>
+                    <a href="">Publicidad</a>
+                    <a href="">Negocios</a>
+                    <a href="">Cómo funciona la Búsqueda</a>                 
+                </div>
+                <div class="txt">
+                    <a href="">Privacidad</a>
+                    <a href="">Condiciones</a>
+                    <a href="">Preferancias</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Función para redirigir a Google al presionar Enter
+        function buscarEnGoogle(event) {
+          if (event.keyCode === 13) { // 13 es el código de tecla Enter
+            const consulta = document.getElementById('busqueda').value;
+            const consultaFormateada = encodeURIComponent(consulta); // Codifica la consulta para URL
+            const urlGoogle = `https://www.google.com/search?q=${consultaFormateada}`;
+            window.location.href = urlGoogle;
+          }
+        }
+    
+        // Agrega un event listener al campo de búsqueda
+        document.getElementById('busqueda').addEventListener('keyup', buscarEnGoogle);
+      </script>
+</body>
+</html>
