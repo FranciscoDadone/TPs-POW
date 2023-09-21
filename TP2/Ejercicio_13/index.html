@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_13</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.js" integrity="sha512-PSHSbngD/Hc1zYbMeM4xUMRt+gD8x7xYdZaDqRE8iy1oDu94O2Mqi2WqYe8QWji50+4EFBbp/Opwc+Nl+ruaqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Calculadora Basica</h1>
+    </div>
+    <div class="container">
+        <div class="item-display"> <p id="display"></p></div>
+        <button class="item1" id="clear-error" onclick="blank()"> CE</button>
+        <button class="item1" id="clear" onclick="blank()"> C </button>
+        <button class="item2" id="plus-minus">±</button>
+        <button class="item2" id="percentage">% </button>
+        <button class="item3" id="seven" onclick="display('7')"> 7</button>
+        <button class="item3" id="eight" onclick="display('8')">8 </button>
+        <button class="item3" id="nine" onclick="display('9')">9 </button>
+        <button class="item2" id="division" onclick="display('/')" > /</button>
+        <button class="item3" id="four" onclick="display('4')"> 4 </button>
+        <button class="item3" id="five" onclick="display('5')"> 5 </button>
+        <button class="item3" id="six" onclick="display('6')"> 6 </button>
+        <button class="item2" id="by" onclick="display('*')"> x </button>
+        <button class="item3" id="one" onclick="display('1')"> 1</button>
+        <button class="item3" id="two"onclick="display('2')"> 2</button>
+        <button class="item3" id="three" onclick="display('3')"> 3 </button>
+        <button class="item2" id="minus" onclick="display('-')"> - </button>
+        <button class="item3" id="zero" onclick="display('0')"> 0</button>
+        <button class="item3" id="dot">.</button>
+        <button class="item4" id="equal" onclick="result()" > = </button>
+        <button class="item2" id="plus" onclick="display('+')"> + </button>
+    </div>
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>
