@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@200&display=swap');
+
+h2{
+    color:  #4d4d4d ;
+    font-family: Merriweather,serif;
+    text-align: left;
+    padding-bottom: 5%;
+
+}
+
+.form-group{
+    padding-bottom: 4%;
+}
+
+.text-left{
+    align-items: left;
+    text-align: left;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: left;
+    padding-bottom: 5%;
+    gap: 5px;
+}
+
+p{
+   
+    padding-bottom: 5%;
+    color: #808080;
+    text-align: left;
+}
+
+body{
+    padding-top: 5%;
+    text-align: center;
+    padding-left: 10%; 
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
