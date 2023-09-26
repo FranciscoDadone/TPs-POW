@@ -1,0 +1,23 @@
+.main{
+    padding-left: 30%; 
+    padding-right: 30%; 
+    margin-top: 10%;
+}
+.main h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main p{
+    margin-top: 20px;
+}
+
+form input{
+    margin-right: 10px;
+}
+
+.form{
+    display: flex;
+    
+}
+
