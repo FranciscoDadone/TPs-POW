@@ -1,0 +1,342 @@
+@font-face {
+    font-family: Lexend;
+    src: url(fonts/Lexend.ttf);
+}
+
+body{
+    padding: 0px;
+    margin: 0px ;
+    
+    font-family: Lexend;
+    color: #50A;
+    font-size: 1vw;
+
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+
+    display: flex;
+    flex: 1 1 0;
+}
+
+body ::-webkit-scrollbar {
+    height: 1vh;
+    width: 1vw;
+}
+body ::-webkit-scrollbar-track {
+    margin: 2vw;
+    border-radius: 1vh;
+    background: none; 
+}
+body ::-webkit-scrollbar-thumb {
+    border-radius: 1vh;
+    background: #408; 
+    cursor: pointer;
+}
+body ::-webkit-scrollbar-thumb:hover {
+    background: #80F;
+}
+
+button{
+    width: max-content;
+    height: 6vh;
+
+    font-family: Lexend;
+    font-size: 1.3vw;
+
+    background:#50A;
+    color: #F1F1F1;
+
+    border: none;
+    border-radius: 1vh;
+
+    transition: all .4s ease-in-out;
+}
+button:hover{
+    background: #60C;
+}
+
+input{
+    width: 30vw;
+    height: auto;
+    padding: 1vh 3vh;
+    border-radius: 3vh;
+
+    color: #F1F1F1;
+    font-size: 1.25vw;
+    
+    border: none;
+    background: #333;
+}
+::-ms-reveal {
+    filter: invert(100%);
+}
+input:focus{
+    background: #444;
+    outline: none;
+}
+
+h1{
+    margin: auto;
+    flex: 1 0 0;
+
+    font-size: 3vw;
+    letter-spacing: 0.5em;
+    font-weight: 400;
+
+    text-align: center;
+    color: #F1F1F1;
+    cursor: default;
+}
+h2{
+    flex: 1 0 0;
+    
+    font-size: 2vw;
+    letter-spacing: .3em;
+    font-weight: 200;
+
+    text-align: center;
+    color: #80F;
+}
+h3{
+    margin-left: 2vw;
+    flex: 1 0 0;
+
+    font-size: 1.5vw;
+    letter-spacing: .1em;
+    font-weight: 100;
+
+    text-align: left;
+    color: #F1F1F1;
+}
+
+form{
+    color: #F1F1F1; 
+    font-size: larger;
+    text-align: justify;
+}
+
+.isotipo{
+    width: 5em;
+    height: 5em;
+}
+.logotipo{
+    letter-spacing: .5em;
+    font-size: 2vw; 
+    background: linear-gradient(to top,#333 0, #50A 20%, #90F 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.imagotipo{
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: column;
+    height: fill;
+    width: 8vw;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    padding: 1vw;
+
+    color: #F1F1F1;
+    text-align: center;
+    align-items: center;
+    background: #333;
+
+    transition: all .6s ease-in-out;
+}
+.navbar a{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1vh;
+    margin: 2vw;
+    font-size: 1vw;
+
+    color: inherit;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.navbar i{
+    font-size: 2vw;
+}
+.navbar a:hover{
+    scale: 1.1;
+    color: #FFF;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 0;
+    width: 80vw;
+    height: fill;
+}
+
+.header{
+    display: flex;
+
+    height: 10vh;
+
+    align-items: center;
+    padding: 1vw;
+
+    background: #408;
+}
+.navbar button, .header button{
+    font-size: 2vw;
+    background: none;
+}
+.navbar button:hover, .header button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    color: #FFF;
+}
+
+.searchbar{
+    display:flex;
+    text-align: center;
+    align-items: center;
+
+    margin: 2vw;
+    align-items: center;
+    border: none;
+}
+.searchbar input[type=text]{
+    padding: .5vw 1.5vw;
+    align-items: center;
+
+    transition: 0.8s;
+    
+    width: 20vw;
+    height: 3vw;
+    border-radius: 3vw 0vw 0vw 3vw;
+
+    font-size: 1vw;
+    color: #F1F1F1;
+    
+    background: linear-gradient(315deg, #408 10%, #426 40%, #444 90%);
+
+    border: none;
+}
+.searchbar input[type=text]:focus{
+    outline: none;
+    width: 40vw;
+}
+.searchbar button[type=submit]{
+    cursor: pointer;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 0vw 3vw  3vw 0vw;
+    background: #408;
+}
+
+.tagbar{
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+    gap: .5vw;
+
+    width: fill;
+    height: fill;
+}
+.tagbar input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+} 
+.tagbar label{
+    cursor: pointer;
+    width: max-content;
+    
+    padding: 1vh 1vw;
+    border-radius: 2vw;
+
+    font-size: 1.25vw;
+    color: #F1F1F1;
+
+    background:#50A ;
+    position: relative;
+    transition: 0.2s;
+}
+.tagbar label:hover {
+    background: #60C;
+} 
+.tagbar input:checked + label {
+    color: #333;
+    background: #80F ;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    max-width: 96vw;
+    padding: 2vw;
+    gap: 2vw 2vw;
+}
+.carrusel{
+    display: flex;
+    overflow-x: scroll;
+
+    max-width: 90vw;
+
+    padding: 2vw;
+    gap: 2vw 2vw;
+}
+.item{
+    z-index: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1 1 0;
+
+    height: 6vw;
+    min-width: 15vw;
+    border-radius: 2.5vh;
+    padding: 2.5vh;
+
+    text-align: justify;
+    text-decoration: none;
+    color: #F1F1F1;
+
+    background: linear-gradient(0deg, rgba(0,0,0,0%) 0%, rgba(102,0,204,80%) 80%);
+}
+.item:hover{
+    cursor: pointer;
+    scale: 1.05;
+    translate: 0vh -1vh;
+    transition: all .4s ease-in-out;
+}
+.item:active{
+    z-index: 10;
+
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+    
+    background: rgba(102,0,204,80%);
+}
+
+.modal_login{
+    background: #222222;
+
+    padding: 5vh 5vw;
+    margin: auto;
+    display: flex;
+    gap: 3vh;
+
+    width: 30vw;
+
+    border-radius: 5vh;
+
+    flex-direction: column;
+    text-align: center;
+}
